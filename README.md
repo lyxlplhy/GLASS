@@ -27,5 +27,8 @@ Please modify argument `--test` to 'ckpt' / 'test' to toggle between training an
 bash run-mpdd.sh 
 ```
 
+## onnx模型转化
 
+模型转换代码：onnx/pth2onnx.py
+推理代码：onnx/ort.py
 
