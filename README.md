@@ -4,48 +4,15 @@
 
 ![](figures/GLASS_schematic.png)
 
-**A Unified Anomaly Synthesis Strategy with Gradient Ascent for Industrial Anomaly Detection and Localization**
-
-_Qiyu Chen, Huiyuan Luo, Chengkan Lv*, Zhengtao Zhang_
-
-[Springer DOI Link](https://link.springer.com/chapter/10.1007/978-3-031-72855-6_3) & 
-[ArXiv Preprint Link](https://arxiv.org/abs/2407.09359)
-
-## Table of Contents
-* [📖 Introduction](#introduction)
-* [🔧 Environments](#environments)
-* [📊 Data Preparation](#data-preparation)
-* [🚀 Run Experiments](#run-experiments)
-* [📂 Dataset Release](#dataset-release)
-* [🔗 Citation](#citation)
-* [🙏 Acknowledgements](#acknowledgements)
-* [📜 License](#license)
-
-## Introduction
-This repository contains source code for GLASS implemented with PyTorch.
-GLASS is a unified framework designed to enhance unsupervised anomaly detection
-by addressing the limitations in coverage and controllability of existing anomaly synthesis strategies,
-particularly for weak defects that resemble normal regions.
-
-This repository also contains the self-built datasets (WFDD, MAD-man, and MAD-sys) proposed in our paper.
-Here, we present a brief summary of GLASS's performance across several benchmark datasets.
-
-|   GLASS   | MVTec AD  |   VisA   |   MPDD   |   WFDD   |
-|:---------:|:---------:|:--------:|:--------:|:--------:|
-| I-AUROC   |   99.9%   |  98.8%   |  99.6%   |   100%   |
-| P-AUROC   |   99.3%   |  98.8%   |  99.4%   |  98.9%   |
-
-## Environments
+## 依赖
 Create a new conda environment and install required packages.
 ```
 conda create -n glass_env python=3.9.15
 conda activate glass_env
 pip install -r requirements.txt
 ```
-Experiments are conducted on NVIDIA Tesla A800 (80GB).
-Same GPU and package version are recommended. 
 
-## Data Preparation
+## 数据集地址
 The public datasets employed in the paper are listed below.
 DTD is an auxiliary texture dataset used for data augmentation in GLASS,
 while the other datasets are used for anomaly detection evaluation.
