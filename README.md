@@ -2,7 +2,6 @@
 
 无监督方法用于检测各种缺陷，如划痕、破碎、脏污、裂痕等
 
-![](figures/GLASS_schematic.png)
 
 ## 依赖
 Create a new conda environment and install required packages.
