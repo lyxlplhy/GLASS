@@ -17,12 +17,14 @@ pip install -r requirements.txt
 - VisA ([Download link](https://github.com/amazon-science/spot-diff/))
 - MPDD ([Download link](https://github.com/stepanje/MPDD/))
 
-## Run Experiments
+## 训练
+DTD为辅助生成异常的数据集，必须下载，然后训练自己的数据集可按照MPDD数据集构建方式，使用good文件夹下训练，缺陷作为验证。
+
 Edit `./shell/run-dataset.sh` to configure arguments `--datapath`, `--augpath`, `--classes`, and hyperparameter settings.
 Please modify argument `--test` to 'ckpt' / 'test' to toggle between training and testing modes.
 
 ```
-bash run-dataset.sh
+bash run-mpdd.sh 
 ```
 
 _"Note that 'dataset' refers to any dataset.
