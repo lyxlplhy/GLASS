@@ -4,7 +4,7 @@
 
 
 ## 依赖
-Create a new conda environment and install required packages.
+环境配置
 ```
 conda create -n glass_env python=3.9.15
 conda activate glass_env
